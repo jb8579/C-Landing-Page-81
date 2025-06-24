@@ -554,9 +554,9 @@ Xtra Small Screen - Small Mobile
 
 
 .hero-part h1 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
-    line-height: 40px;
+    line-height: 27px;
 }
 
 .hero-part h1 br {
@@ -570,37 +570,41 @@ Xtra Small Screen - Small Mobile
 
 .hero-part p {
     font-size: 11px;
-    line-height: 22px;
+    line-height: 16px;
     text-align: center;
 }
 
 .hero-part ul li h6 {
-    font-size: 12px;
+    font-size: 11px;
     top: -2px;
     padding-left: 0px;
     font-weight: 600;
+    text-align: center;
 }
 
 .hero-part ul li img {
-    max-width: 100%;
-    display: inline-block;
     margin-bottom: 0px;
+    width: 18px;
+    max-width: unset;
 }
 
 .hero-part ul {
-    padding-top: 24px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    justify-content: space-around;
-    grid-row-gap: 14px;
-    width: 262px;
-    margin: auto;
+    /* padding-top: 24px; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-column-gap: 0px; */
+    /* justify-content: center; */
+    /* grid-row-gap: 14px; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .hero-part ul li {
-    margin: 0 0px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -627,8 +631,8 @@ Xtra Small Screen - Small Mobile
     background-image: inherit;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    padding: 45px 14px;
+    background-size: cover;
+    padding: 42px 14px;
     padding-bottom: 14px;
     display: block;
     height: initial;
@@ -696,7 +700,7 @@ Xtra Small Screen - Small Mobile
 
 
 .csnptgl20-ofrbsbox-bonus h3 {
-    font-size: 13px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -711,10 +715,11 @@ Xtra Small Screen - Small Mobile
 .csnptgl20-ofrbsbox-score p {
     font-size: 12px;
     text-align: left;
+    color: #737373;
 }
 
 .csnptgl20-ofrbsbox-score h4 {
-    font-size: 32px;
+    font-size: 28px;
     text-align: left;
     padding-top: 0px;
 }
@@ -771,27 +776,25 @@ Xtra Small Screen - Small Mobile
 }
 
 .mobileofrbs-boxbg1 {
-    height: 266px;
-    width: 290px;
     margin: auto;
     display: block;
     margin-bottom: 25px;
+    background-size: cover;
 }
 
 .mobileofrbs-boxbg2 {
-    height: 266px;
-    width: 290px;
     margin: auto;
     display: block;
     margin-bottom: 25px;
+        background-size: cover;
 }
 
 .ofrbs-boxbg2 {
     background-image: inherit;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    padding: 45px 14px;
+    background-size: cover;
+    padding: 42px 14px;
     padding-bottom: 14px;
     display: block;
     height: initial;
@@ -1131,7 +1134,7 @@ Xtra Small Screen - Small Mobile
 }
 
 .ziehharmonika {
-    width: 350px;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -1140,3 +1143,47 @@ Xtra Small Screen - Small Mobile
 
 
 }
+
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+    .ofrbs-boxbg1 {
+    padding: 60px 30px;
+    padding-bottom: 44px;
+}
+       
+    .ofrbs-boxbg2 {
+    padding: 60px 30px;
+    padding-bottom: 44px;
+    }
+
+    .csnptgl20boxlogo {
+    height: 80px;
+}
+
+.csnptgl20logosbox {
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+} 
+}
+
+
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .ofrbs-boxbg1 {
+        padding: 60px 25px;
+        padding-bottom: 40px;
+    }
+       
+    .ofrbs-boxbg2 {
+        padding: 60px 25px;
+        padding-bottom: 40px;
+    }
+       
+
+    .csnptgl20boxlogo {
+    height: 64px;
+}
+}
+
